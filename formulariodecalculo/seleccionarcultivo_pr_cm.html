@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+*seleccionarcultivo_pr_cm.html 
+*
+*Copyright 2014 Juan Eduardo Riva.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+<html> 
+	<head>
+		<meta name="x-blackberry-defaultHoverEffect" content="false"; charset="UTF-8"/>
+    		<title>
+    			Seleccionar Cultivo
+			</title>
+    			<script type='text/javascript' src='js/formcalculations.js'>
+     			</script>
+			<link href='styles/cakeform.css' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+	    <div id='wrap'>
+	        <form action='' id='cakeform'>
+				<div>
+					<div class='cont_order'>
+						<fieldset>
+							<legend>Selecione cultivo</legend>
+							<label>Cultivo
+								<select id='cultivo' name='cultivo' onchange='location = this.options[this.selectedIndex].value;'>>
+									<option value='None'>Selecionar</option>
+									<option value='maiz_pr_cm.html'>Milho</option>
+									<option value='soja_pr_cm.html'>Soja</option>
+									<option value='girasol_pr_cm.html'>Girassol</option>
+									<option value='trigo_cebada_pr_cm.html'>Trigo y Cevada</option>
+								</select>
+							</label>
+							
+						</fieldset>
+					</div>
+					<p id='ayuda'>
+						<a href="manual.html">Manual de Ayuda</a>
+					</p>
+				</div>
+			</form>
+		</div><!--End of wrap-->
+	</body>
+</html>
