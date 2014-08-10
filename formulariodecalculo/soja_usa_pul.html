@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <!--
-* soja_mx.html
+* soja_usa_pul.html
 *
 * Copyright 2014 Juan Eduardo Riva.
 *
@@ -21,7 +21,7 @@
 		<meta name="x-blackberry-defaultHoverEffect" content="false"; charset="UTF-8"/>
     
     	<title>
-    		Densidades de Siembra de Soja MX Pulgadas
+    		Soy Plantation density Calculator (Inch)
     	</title>
 	    <script type="text/javascript" src="js/formcalculations.js"></script>
 	    <link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
@@ -32,73 +32,73 @@
 			<div>
 				<div class="cont_order">
 					<fieldset>
-						<legend>Calcula tu densidad de Soja MX Pulgadas</legend>
-						<label>Densidad a Lograr por acre
+						<legend>Calculate your Soy poblation density</legend>
+						<label>Target plantation density per acre
 							<br>
-							<select id="filling" name='filling' onchange="calculateTotal_mx()">
+							<select id="filling" name='filling' onchange="calculateTotal_usa_pul()">
 								<option value="None">Seleccionar</option>
-								<option value="550000">550.000 Plantas</option>
-								<option value="540000">540.000 Plantas</option>
-								<option value="530000">530.000 Plantas</option>
-								<option value="520000">520.000 Plantas</option>
-								<option value="510000">510.000 Plantas</option>
-								<option value="500000">500.000 Plantas</option>
-								<option value="490000">490.000 Plantas</option>
-								<option value="480000">480.000 Plantas</option>
-								<option value="470000">470.000 Plantas</option>
-								<option value="460000">460.000 Plantas</option>
-								<option value="450000">450.000 Plantas</option>
-								<option value="440000">440.000 Plantas</option>
-								<option value="430000">430.000 Plantas</option>
-								<option value="420000">420.000 Plantas</option>
-								<option value="410000">410.000 Plantas</option>
-								<option value="400000">400.000 Plantas</option>
-								<option value="390000">390.000 Plantas</option>
-								<option value="380000">380.000 Plantas</option>
-								<option value="370000">370.000 Plantas</option>
-								<option value="360000">360.000 Plantas</option>
-								<option value="350000">350.000 Plantas</option>
-								<option value="340000">340.000 Plantas</option>
-								<option value="330000">330.000 Plantas</option>
-								<option value="320000">320.000 Plantas</option>
-								<option value="310000">310.000 Plantas</option>
-								<option value="300000">300.000 Plantas</option>
-								<option value="290000">290.000 Plantas</option>
-								<option value="280000">280.000 Plantas</option>
-								<option value="270000">270.000 Plantas</option>
-								<option value="260000">260.000 Plantas</option>
-								<option value="250000">250.000 Plantas</option>
-								<option value="240000">240.000 Plantas</option>
-								<option value="230000">230.000 Plantas</option>
-								<option value="220000">220.000 Plantas</option>
-								<option value="210000">210.000 Plantas</option>
-								<option value="200000">200.000 Plantas</option>
-								<option value="190000">190.000 Plantas</option>
-								<option value="180000">180.000 Plantas</option>
-								<option value="170000">170.000 Plantas</option>
-								<option value="160000">160.000 Plantas</option>
-								<option value="150000">150.000 Plantas</option>
-								<option value="140000">140.000 Plantas</option>
+								<option value="550000">550,000 Plants</option>
+								<option value="540000">540,000 Plants</option>
+								<option value="530000">530,000 Plants</option>
+								<option value="520000">520,000 Plants</option>
+								<option value="510000">510,000 Plants</option>
+								<option value="500000">500,000 Plants</option>
+								<option value="490000">490,000 Plants</option>
+								<option value="480000">480,000 Plants</option>
+								<option value="470000">470,000 Plants</option>
+								<option value="460000">460,000 Plants</option>
+								<option value="450000">450,000 Plants</option>
+								<option value="440000">440,000 Plants</option>
+								<option value="430000">430,000 Plants</option>
+								<option value="420000">420,000 Plants</option>
+								<option value="410000">410,000 Plants</option>
+								<option value="400000">400,000 Plants</option>
+								<option value="390000">390,000 Plants</option>
+								<option value="380000">380,000 Plants</option>
+								<option value="370000">370,000 Plants</option>
+								<option value="360000">360,000 Plants</option>
+								<option value="350000">350,000 Plants</option>
+								<option value="340000">340,000 Plants</option>
+								<option value="330000">330,000 Plants</option>
+								<option value="320000">320,000 Plants</option>
+								<option value="310000">310,000 Plants</option>
+								<option value="300000">300,000 Plants</option>
+								<option value="290000">290,000 Plants</option>
+								<option value="280000">280,000 Plants</option>
+								<option value="270000">270,000 Plants</option>
+								<option value="260000">260,000 Plants</option>
+								<option value="250000">250,000 Plants</option>
+								<option value="240000">240,000 Plants</option>
+								<option value="230000">230,000 Plants</option>
+								<option value="220000">220,000 Plants</option>
+								<option value="210000">210,000 Plants</option>
+								<option value="200000">200,000 Plants</option>
+								<option value="190000">190,000 Plants</option>
+								<option value="180000">180,000 Plants</option>
+								<option value="170000">170,000 Plants</option>
+								<option value="160000">160,000 Plants</option>
+								<option value="150000">150,000 Plants</option>
+								<option value="140000">140,000 Plants</option>
 						   </select>
 					    </label><br/>
-						<label>Espaciamiento
+						<label>Space betwen planting lines
 							<br>
-							<select id='filling2' name='filling2' onchange='calculateTotal_mx()'>
+							<select id='filling2' name='filling2' onchange='calculateTotal_usa_pul()'>
 								<option value='None'>Selec.</option>
-								<option value='102.00'>40 pulgadas (102 Cm) entre cuerpo</option>
-								<option value='97.00'>38 pulgadas (97 Cm) entre cuerpo</option>
-								<option value='91.00'>36 pulgadas (91 Cm) entre cuerpo</option>
-								<option value='76.00'>30 pulgadas (56 Cm) entre cuerpo</option>
-								<option value='56.00'>22 pulgadas (56 Cm) entre cuerpo</option>
-								<option value='51.00'>20 pulgadas (51 Cm) entre cuerpo</option>
-								<option value='48.00'>19 pulgadas (48 Cm) entre cuerpo</option>
-								<option value='46.00'>18 pulgadas (46 Cm) entre cuerpo</option>
-								<option value='38.00'>15 pulgadas (38 Cm) entre cuerpo</option>
+								<option value='102.00'>40 inches (102 Cm) betwen lines</option>
+								<option value='97.00'>38 inches (97 Cm) betwen lines</option>
+								<option value='91.00'>36 inches (91 Cm) betwen lines</option>
+								<option value='76.00'>30 inches (56 Cm) betwen lines</option>
+								<option value='56.00'>22 inches (56 Cm) betwen lines</option>
+								<option value='51.00'>20 inches (51 Cm) betwen lines</option>
+								<option value='48.00'>19 inches (48 Cm) betwen lines</option>
+								<option value='46.00'>18 inches (46 Cm) betwen lines</option>
+								<option value='38.00'>15 inches (38 Cm) betwen lines</option>
 							</select>
 						</label><br/>
-						<label>Indice Logro 
+						<label>Success Rate  
 							<br>
-							<select id="indicelogro" name='indicelogro' onchange="calculateTotal_mx()">
+							<select id="indicelogro" name='indicelogro' onchange="calculateTotal_usa_pul()">
 								<option value="None">Seleccionar</option>
 								<option value="1.00">100 %</option>
 								<option value="0.98">98 %</option>
@@ -138,9 +138,9 @@
 								<option value="0.30">30 %</option>
 							</select>
 						</label><br/>
-						<label>Peso de 1000 Semillas 
+						<label>Weight of 1000 seeds 
 							<br>
-							<select id="pesoMil" name='pesoMil' onchange="calculateTotal2_mx()">
+							<select id="pesoMil" name='pesoMil' onchange="calculateTotal2_usa_pul()">
 								<option value='None'>Seleccionar</option>
 								<option value='350.00'>350.00 Grs.</option>
 								<option value="340.00">340.00 Grs.</option>
@@ -175,14 +175,14 @@
 								<option value="50.00">50.00 Grs.</option>
 							</select>
 						</label><br/>
-						<div id="totalPrice_mx"> </div>
-						<div id="totalPrice2_mx"> </div>
+						<div id="totalPrice_usa_pul"> </div>
+						<div id="totalPrice2_usa_pul"> </div>
                     </fieldset>
 				</div>
 				<p id='ayuda'>
-					<a href="manual.html">Manual de ayuda al usuario</a>
+					<a href="manual.html">User Manual</a>
 					<br>
-					<a href="seleccionarcultivo_mx_pul.html">Volver</a>
+					<a href="seleccionarcultivo_usa_pul.html">Back</a>
 				</p>
             </div>  
         </form>
