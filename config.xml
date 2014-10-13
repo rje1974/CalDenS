@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<widget xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    version="1.0.0.4" id="CalDenS">   
+   
+    <name>CalDenS</name> 
+    <author>Juan Eduardo Riva</author>
+    <description>Un herramienta para realizar calculos durante la siembra</description>
+    <icon src="images/icon.png"/>
+    <content src="index.html"/>
+	  <rim:cache maxCacheSizeTotal="1024" maxCacheSizeItem ="256" />
+ </widget>
