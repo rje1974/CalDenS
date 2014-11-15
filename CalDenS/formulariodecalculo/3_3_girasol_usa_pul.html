@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+* girasol_usa_pul.html
+* 
+* Copyright 2014 Juan Eduardo Riva.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+<html> 
+	<head>
+		<meta name="x-blackberry-defaultHoverEffect" content="false"; charset="UTF-8"/>
+			<title>
+				Sun Flower Planting Poblation
+			</title>
+			<script type="text/javascript" src="js/formcalculations.js">
+			</script>
+			<link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload='hideTotal_mx()'>
+		<div id="wrap"> 
+			<form action="" id="cakeform" onsubmit="return false;">
+				<div>
+					<div class="cont_order">
+				   <fieldset><legend>Calculate your Sun Flower Planting Poblation</legend>
+						<label>Target plantation density in an acre
+							<br>
+							<select id='filling' name='filling' onchange='calculateTotal_mx()'>
+								<option value='None'>Select</option>
+								<option value='46000'>46,000 Plants</option>
+								<option value='44000'>44,000 Plants</option>
+								<option value='42000'>42,000 Plants</option>
+								<option value='40000'>40,000 Plants</option>
+								<option value='38000'>38,000 Plants</option>
+								<option value='36000'>36,000 Plants</option>
+								<option value='34000'>34,000 Plants</option>
+								<option value='32000'>32,000 Plants</option>
+								<option value='30000'>30,000 Plants</option>
+								<option value='28000'>28,000 Plants</option>
+								<option value='26000'>26,000 Plants</option>
+								<option value='24000'>24,000 Plants</option>
+								<option value='22000'>22,000 Plants</option>
+								<option value='20000'>20,000 Plants</option>
+								<option value='18000'>18,000 Plants</option>
+								<option value='16000'>16,000 Plants</option>
+								<option value='15000'>15,000 Plants</option>
+							</select>
+						</label><br/>
+						<label>Space betwen planting lines
+							<br>
+							<select id='filling2' name='filling2' onchange='calculateTotal_mx()'>
+								<option value='None'>Select</option>
+								<option value='102.00'>40 inches (102 Cm) betwen</option>
+								<option value='97.00'>38 inches (97 Cm) betwen the lines</option>
+								<option value='91.00'>36 inches (91 Cm) betwen the lines</option>
+								<option value='76.00'>30 inches (76 Cm) betwen the lines</option>
+								<option value='56.00'>22 inches (56 Cm) betwen the lines</option>
+								<option value='51.00'>20 inches (51 Cm) betwen the lines</option>
+								<option value='48.00'>19 inches (48 Cm) betwen the lines</option>
+								<option value='46.00'>18 inches (46 Cm) betwen the lines</option>
+								<option value='38.00'>15 inches (38 Cm) betwen the lines</option>
+							</select>
+						</label><br/>
+						<label>Success Rate 
+						    <br>
+							<select id='indicelogro' name='indicelogro' onchange='calculateTotal_mx()'>
+							<option value='None'>Select</option>
+							<option value='1.00'>100 %</option>
+							<option value='0.98'>98 %</option>
+							<option value='0.96'>96 %</option>
+							<option value='0.94'>94 %</option>
+							<option value='0.92'>92 %</option>
+							<option value='0.90'>90 %</option>
+							<option value='0.88'>88 %</option>
+							<option value='0.86'>86 %</option>
+							<option value='0.84'>84 %</option>
+							<option value='0.82'>82 %</option>
+							<option value='0.80'>80 %</option>
+							<option value='0.78'>78 %</option>
+							<option value='0.76'>76 %</option>
+							<option value='0.74'>74 %</option>
+							<option value='0.72'>72 %</option>
+							<option value='0.70'>70 %</option>
+							<option value='0.68'>68 %</option>
+							<option value='0.66'>66 %</option>
+							<option value='0.64'>64 %</option>
+							<option value='0.62'>62 %</option>
+							<option value='0.60'>60 %</option>
+							<option value='0.58'>58 %</option>
+							<option value='0.56'>56 %</option>
+							<option value='0.54'>54 %</option>
+							<option value='0.52'>52 %</option>
+							<option value='0.50'>50 %</option>
+							<option value='0.48'>48 %</option>
+							<option value='0.46'>46 %</option>
+							<option value='0.44'>44 %</option>
+							<option value='0.42'>42 %</option>
+							<option value='0.40'>40 %</option>
+							<option value='0.38'>38 %</option>
+							<option value='0.36'>36 %</option>
+							<option value='0.34'>34 %</option>
+							<option value='0.32'>32 %</option>
+							<option value='0.30'>30 %</option>
+						   </select>
+	 					<div id='totalPrice_mx'>
+						</div>
+					</fieldset>
+					</div>
+					<div id='ayuda'>
+						<a href='4_manual_en.html'>Manual de Ayuda</a>
+						<br>
+						<a href='2_seleccionarcultivo_usa_pul.html'>Volver</a>
+					</div>
+				</div>
+			</form>
+		</div><!--End of wrap-->
+	</body>
+</html>

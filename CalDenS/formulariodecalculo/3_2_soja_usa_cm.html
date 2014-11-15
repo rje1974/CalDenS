@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+* soja_usa_cm.html
+*
+* Copyright 2014 Juan Eduardo Riva.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+-->
+<html> 
+	<head>
+		<meta name="x-blackberry-defaultHoverEffect" content="false"; charset="UTF-8"/>
+    
+    	<title>
+    		Soy Poblation Density
+    	</title>
+	    <script type="text/javascript" src="js/formcalculations.js"></script>
+	    <link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload='hideTotal(), hideTotal2()'>
+    <div id="wrap">
+        <form action="" id="cakeform" onsubmit="return false;">
+			<div>
+				<div class="cont_order">
+					<fieldset>
+						<legend>Calculate Your Soy Population Density (METRIC)</legend>
+						<label>Plant Population to achieve per hectare
+							<br>
+							<select id="filling" name='filling' onchange="calculateTotal_usa_cm()">
+								<option value="None">Select</option>
+								<option value="550000">550,000 Plants</option>
+								<option value="540000">540,000 Plants</option>
+								<option value="530000">530,000 Plants</option>
+								<option value="520000">520,000 Plants</option>
+								<option value="510000">510,000 Plants</option>
+								<option value="500000">500,000 Plants</option>
+								<option value="490000">490,000 Plants</option>
+								<option value="480000">480,000 Plants</option>
+								<option value="470000">470,000 Plants</option>
+								<option value="460000">460,000 Plants</option>
+								<option value="450000">450,000 Plants</option>
+								<option value="440000">440,000 Plants</option>
+								<option value="430000">430,000 Plants</option>
+								<option value="420000">420,000 Plants</option>
+								<option value="410000">410,000 Plants</option>
+								<option value="400000">400,000 Plants</option>
+								<option value="390000">390,000 Plants</option>
+								<option value="380000">380,000 Plants</option>
+								<option value="370000">370,000 Plants</option>
+								<option value="360000">360,000 Plants</option>
+								<option value="350000">350,000 Plants</option>
+								<option value="340000">340,000 Plants</option>
+								<option value="330000">330,000 Plants</option>
+								<option value="320000">320,000 Plants</option>
+								<option value="310000">310,000 Plants</option>
+								<option value="300000">300,000 Plants</option>
+								<option value="290000">290,000 Plants</option>
+								<option value="280000">280,000 Plants</option>
+								<option value="270000">270,000 Plants</option>
+								<option value="260000">260,000 Plants</option>
+								<option value="250000">250,000 Plants</option>
+								<option value="240000">240,000 Plants</option>
+								<option value="230000">230,000 Plants</option>
+								<option value="220000">220,000 Plants</option>
+								<option value="210000">210,000 Plants</option>
+								<option value="200000">200,000 Plants</option>
+								<option value="190000">190,000 Plants</option>
+								<option value="180000">180,000 Plants</option>
+								<option value="170000">170,000 Plants</option>
+								<option value="160000">160,000 Plants</option>
+								<option value="150000">150,000 Plants</option>
+								<option value="140000">140,000 Plants</option>
+						   </select>
+					    </label><br/>
+						<label>Space between planting lines
+							<br>
+							<select id="filling2" name='filling2' onchange="calculateTotal_usa_cm()">
+									<option value="None">Select</option>
+									<option value="100.00">100 Cm between planting lines</option>
+									<option value="70.00">70 Cm between planting lines</option>
+									<option value="52.50">52,5 Cm between planting lines</option>
+									<option value="42.00">42 Cm between planting lines</option>
+									<option value="35.00">35 Cm between planting lines</option>
+									<option value="23.00">23 Cm between planting lines</option>
+									<option value="22.00">22 Cm between planting lines</option>
+									<option value="21.00">21 Cm between planting lines</option>
+									<option value="20.00">20 Cm between planting lines</option>
+									<option value="19.00">19 Cm between planting lines</option>
+									<option value="18.00">18 Cm between planting lines</option>
+									<option value="17.50">17,5 Cm between planting lines</option>
+									<option value="17.00">17 Cm between planting lines</option>
+							</select>
+						</label><br/>
+						<label>Plant Achievement Rate
+							<br>
+							<select id="indicelogro" name='indicelogro' onchange="calculateTotal_usa_cm()">
+								<option value="None">Select</option>
+								<option value="1.00">100 %</option>
+								<option value="0.98">98 %</option>
+								<option value="0.96">96 %</option>
+								<option value="0.94">94 %</option>
+								<option value="0.92">92 %</option>
+								<option value="0.90">90 %</option>
+								<option value="0.88">88 %</option>
+								<option value="0.86">86 %</option>
+								<option value="0.84">84 %</option>
+								<option value="0.82">82 %</option>
+								<option value="0.80">80 %</option>
+								<option value="0.78">78 %</option>
+								<option value="0.76">76 %</option>
+								<option value="0.74">74 %</option>
+								<option value="0.72">72 %</option>
+								<option value="0.70">70 %</option>
+								<option value="0.68">68 %</option>
+								<option value="0.66">66 %</option>
+								<option value="0.64">64 %</option>
+								<option value="0.62">62 %</option>
+								<option value="0.60">60 %</option>
+								<option value="0.58">58 %</option>
+								<option value="0.56">56 %</option>
+								<option value="0.54">54 %</option>
+								<option value="0.52">52 %</option>
+								<option value="0.50">50 %</option>
+								<option value="0.48">48 %</option>
+								<option value="0.46">46 %</option>
+								<option value="0.44">44 %</option>
+								<option value="0.42">42 %</option>
+								<option value="0.40">40 %</option>
+								<option value="0.38">38 %</option>
+								<option value="0.36">36 %</option>
+								<option value="0.34">34 %</option>
+								<option value="0.32">32 %</option>
+								<option value="0.30">30 %</option>
+							</select>
+						</label><br/>
+						<label>Weight of 1000 Seeds 
+							<br>
+							<select id="pesoMil" name='pesoMil' onchange="calculateTotal2_usa_cm()">
+								<option value='None'>Select</option>
+								<option value='350.00'>350.00 Grs.</option>
+								<option value="340.00">340.00 Grs.</option>
+								<option value="330.00">330.00 Grs.</option>
+								<option value="320.00">320.00 Grs.</option>
+								<option value="310.00">310.00 Grs.</option>
+								<option value="300.00">300.00 Grs.</option>
+								<option value="290.00">290.00 Grs.</option>
+								<option value="280.00">280.00 Grs.</option>
+								<option value="270.00">270.00 Grs.</option>
+								<option value="260.00">260.00 Grs.</option>
+								<option value='250.00'>250.00 Grs.</option>
+								<option value="240.00">240.00 Grs.</option>
+								<option value="230.00">230.00 Grs.</option>
+								<option value="220.00">220.00 Grs.</option>
+								<option value="210.00">210.00 Grs.</option>
+								<option value="200.00">200.00 Grs.</option>
+								<option value="190.00">190.00 Grs.</option>
+								<option value="180.00">180.00 Grs.</option>
+								<option value="170.00">170.00 Grs.</option>
+								<option value="160.00">160.00 Grs.</option>
+								<option value="150.00">150.00 Grs.</option>
+								<option value="140.00">140.00 Grs.</option>
+								<option value="130.00">130.00 Grs.</option>
+								<option value="120.00">120.00 Grs.</option>
+								<option value="110.00">110.00 Grs.</option>
+								<option value="100.00">100.00 Grs.</option>
+								<option value="90.00">90.00 Grs.</option>
+								<option value="80.00">80.00 Grs.</option>
+								<option value="70.00">70.00 Grs.</option>
+								<option value="60.00">60.00 Grs.</option>
+								<option value="50.00">50.00 Grs.</option>
+							</select>
+						</label><br/>
+						<div id="totalPrice"> </div>
+						<div id="totalPrice2"> </div>
+                    </fieldset>
+				</div>
+				<div id='ayuda'>
+					<a href='4_manual_en.html'>User Manual</a>
+					<br>
+					<a href='2_seleccionarcultivo_usa_cm.html'>Back</a>
+				</div>
+            </div>  
+        </form>
+	</div><!--End of wrap-->
+</body>
+</html>
